@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Mountain } from "lucide-react";
+import { Menu, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -17,7 +17,7 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Mountain className="h-6 w-6 text-accent" />
+            <BookOpen className="h-6 w-6 text-accent" />
             <span className="hidden font-bold sm:inline-block">
               Think Plus
             </span>
@@ -47,7 +47,7 @@ export function Header() {
                 href="/"
                 className="mb-8 flex items-center space-x-2"
               >
-                <Mountain className="h-6 w-6 text-accent" />
+                <BookOpen className="h-6 w-6 text-accent" />
                 <span className="font-bold">Think Plus</span>
               </Link>
               <div className="flex flex-col space-y-3">

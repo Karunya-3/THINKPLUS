@@ -1,16 +1,16 @@
 import Link from 'next/link';
-import { Mountain } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="border-t border-border/40 py-6 md:py-8">
       <div className="container max-w-screen-2xl flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <Mountain className="h-6 w-6 text-accent" />
-          <p className="text-sm font-semibold">Animated Spaces</p>
+          <BookOpen className="h-6 w-6 text-accent" />
+          <p className="text-sm font-semibold">ThinkPlus Education</p>
         </div>
         <p className="text-sm text-muted-foreground text-center">
-          © {new Date().getFullYear()} Animated Spaces. All rights reserved.
+          © {new Date().getFullYear()} ThinkPlus Education. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
