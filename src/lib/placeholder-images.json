@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "about-image",
+      "description": "Abstract 3D geometric shapes with vibrant colors",
+      "imageUrl": "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMGdlb21ldHJpY3xlbnwwfHx8fDE3NjA5NzExNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract geometric"
+    }
+  ]
+}
