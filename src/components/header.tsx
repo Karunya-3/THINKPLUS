@@ -19,7 +19,7 @@ export function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Mountain className="h-6 w-6 text-accent" />
             <span className="hidden font-bold sm:inline-block">
-              Animated Spaces
+              Think Plus
             </span>
           </Link>
           <nav className="flex items-center gap-6 text-sm">
@@ -48,7 +48,7 @@ export function Header() {
                 className="mb-8 flex items-center space-x-2"
               >
                 <Mountain className="h-6 w-6 text-accent" />
-                <span className="font-bold">Animated Spaces</span>
+                <span className="font-bold">Think Plus</span>
               </Link>
               <div className="flex flex-col space-y-3">
                 {navLinks.map((link) => (

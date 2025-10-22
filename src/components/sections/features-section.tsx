@@ -1,21 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Layers3, Rocket } from "lucide-react";
+import { BookOpen, Users, Target } from "lucide-react";
 
 const features = [
   {
-    icon: <Layers3 className="w-12 h-12 text-accent" />,
-    title: "3D Effects",
-    description: "Engaging 3D effects on interactive elements to create a rich user experience that feels alive.",
+    icon: <Target className="w-12 h-12 text-accent" />,
+    title: "CAT Preparation",
+    description: "Comprehensive CAT coaching with expert faculty from IIMs. Master quantitative aptitude, verbal ability, data interpretation, and logical reasoning with our proven methodology.",
   },
   {
-    icon: <Rocket className="w-12 h-12 text-accent" />,
-    title: "Smooth Animations",
-    description: "Silky-smooth animations and transitions that provide satisfying visual feedback without being distracting.",
+    icon: <BookOpen className="w-12 h-12 text-accent" />,
+    title: "IPMAT Programs",
+    description: "Specialized IPMAT preparation designed for 5-year integrated management programs at IIMs. Get personalized guidance and strategic learning approaches.",
   },
   {
-    icon: <Code className="w-12 h-12 text-accent" />,
-    title: "Interactive Components",
-    description: "Fully interactive components that respond to user actions, making your web application more dynamic.",
+    icon: <Users className="w-12 h-12 text-accent" />,
+    title: "CLAT Coaching",
+    description: "Expert CLAT preparation with comprehensive study material and mock tests. Excel in legal aptitude, logical reasoning, and general knowledge sections.",
   },
 ];
 
@@ -24,9 +24,9 @@ export function FeaturesSection() {
     <section id="features" className="py-20 md:py-32">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Core Features</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Our Programs</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Discover the powerful features that make Animated Spaces the next generation of web design.
+            Transform your career with ThinkPlus Education's expert-led programs. Get mentored by IIM graduates and industry experts to ace your entrance exams.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
