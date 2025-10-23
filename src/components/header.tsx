@@ -7,7 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function Header() {
   const navLinks = [
-    { href: "#home", label: "Home" },
+    { href: "/", label: "Home" },
     { href: "#features", label: "Features" },
     { href: "#about", label: "About" },
   ];
@@ -15,6 +15,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
+        {/* Left section */}
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <BookOpen className="h-6 w-6 text-accent" />
@@ -34,7 +35,10 @@ export function Header() {
             ))}
           </nav>
         </div>
+
+        {/* Right section */}
         <div className="flex flex-1 items-center justify-end">
+          {/* Mobile Menu */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -43,10 +47,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="pr-0 bg-background">
-              <Link
-                href="/"
-                className="mb-8 flex items-center space-x-2"
-              >
+              <Link href="/" className="mb-8 flex items-center space-x-2">
                 <BookOpen className="h-6 w-6 text-accent" />
                 <span className="font-bold">Think Plus</span>
               </Link>
@@ -61,10 +62,17 @@ export function Header() {
                   </Link>
                 ))}
               </div>
+              <Link href="/signup" className="mt-6">
+                <Button className="w-full">Get Started</Button>
+              </Link>
             </SheetContent>
           </Sheet>
+
+          {/* Desktop Get Started */}
           <div className="hidden md:flex">
-             <Button className="3d-hover">Get Started</Button>
+            <Link href="/signup">
+              <Button className="3d-hover">Get Started</Button>
+            </Link>
           </div>
         </div>
       </div>
