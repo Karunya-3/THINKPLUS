@@ -7,12 +7,19 @@ export function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const followerRef = useRef<HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
+  const [isClient, setIsClient] = useState(false); // Add this state
 
   const rafId = useRef<number>();
   const mousePos = useRef({ x: -100, y: -100 });
   const followerPos = useRef({ x: -100, y: -100 });
   
   useEffect(() => {
+    setIsClient(true); // Set to true when component mounts on client
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return; // Don't run on server
+
     const handleMouseMove = (e: MouseEvent) => {
       mousePos.current = { x: e.clientX, y: e.clientY };
       const target = e.target as HTMLElement;
@@ -43,7 +50,12 @@ export function CustomCursor() {
         cancelAnimationFrame(rafId.current);
       }
     };
-  }, []);
+  }, [isClient]); // Add isClient as dependency
+
+  // Don't render on server
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <>

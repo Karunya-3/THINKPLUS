@@ -62,7 +62,7 @@ export function Header() {
                   </Link>
                 ))}
               </div>
-              <Link href="/signup" className="mt-6">
+              <Link href="/auth/signup" className="mt-6">
                 <Button className="w-full">Get Started</Button>
               </Link>
             </SheetContent>
@@ -70,7 +70,7 @@ export function Header() {
 
           {/* Desktop Get Started */}
           <div className="hidden md:flex">
-            <Link href="/signup">
+            <Link href="/auth/signup">
               <Button className="3d-hover">Get Started</Button>
             </Link>
           </div>
